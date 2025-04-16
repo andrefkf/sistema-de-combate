@@ -56,7 +56,6 @@ def turno_enemigos(enemigos, jugador):
             print(f"\n{enemigo.nombre} ataca...")
             jugador.recibir_daño(enemigo.ataque)
 
-# Juego principal
 def juego():
     jugador = Personaje("Comandante", 100, 20, 5)
     enemigos = [Personaje(f"Enemigo {i+1}", random.randint(30, 50), random.randint(10, 15), 2) for i in range(3)]
@@ -93,5 +92,4 @@ def juego():
     else:
         print("\nHas sido derrotado...")
 
-# Iniciar juego
 juego()
